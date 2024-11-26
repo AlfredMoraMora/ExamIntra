@@ -8,10 +8,10 @@ for i in range (0,3):
         try:
             nombre = int(input("Entrez un nombre: "))
         except ValueError:
-            print("Entrez une valeur valide. ")
+            print("Entrez un nombre entier. ")
             continue
         cpt_tentatives += 1
-        if cpt_tentatives >= 5:
+        if cpt_tentatives > 5:
             print("Oups! Voux avez dépasé le nombre de tentatives permises!")
             break
         elif nombre < nbr_devine:
